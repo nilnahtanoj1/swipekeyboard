@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- tells system that app is an input method
+needs to declare KeyboardService, required permissions and input method metadata -->

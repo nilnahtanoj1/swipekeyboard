@@ -1,0 +1,1 @@
+//manages layouts (alphabet, numbers, symbols) and switching
