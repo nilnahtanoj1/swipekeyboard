@@ -1,3 +1,26 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <!-- tells system that app is an input method
 needs to declare KeyboardService, required permissions and input method metadata -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mykeyboardapp">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <service
+            android:name=".KeyboardService"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
+        </service>
+
+    </application>
+
+</manifest>
